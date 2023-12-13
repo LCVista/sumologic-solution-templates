@@ -40,17 +40,3 @@ module "staging-collection-module" {
   environment               = local.sumologic_environment  
   sumologic_organization_id = local.sumologic_organization_id
 }
-
-module "prod-collection-module" {
-  source = "./source-module"
-
-  providers = {
-    aws = aws.staging
-  }
-
-  access_id                 = var.sumologic_access_id
-  access_key                = var.sumologic_access_key
-  aws_account_alias         = "staging"
-  environment               = local.sumologic_environment  
-  sumologic_organization_id = local.sumologic_organization_id
-}
