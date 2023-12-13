@@ -1,5 +1,12 @@
 terraform {
-  required_version = ">= 0.13.0"
+  cloud {
+    organization = "lcvista"
+    workspaces {
+      name = "sumologic-solution-templates"
+    }
+  }
+
+  required_version = ">= 1.3.0"
 
   required_providers {
     aws = {
