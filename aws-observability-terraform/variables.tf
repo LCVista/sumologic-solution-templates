@@ -19,6 +19,18 @@ variable "sumologic_access_key" {
   }
 }
 
+variable "staging_aws_access_key" {
+  type        = string
+  description = "Staging account user AWS Access Key."
+  sensitive   = false
+}
+
+variable "staging_aws_secret_key" {
+  type        = string
+  description = "Staging account user AWS Secret Key."
+  sensitive   = true
+}
+
 # The following variables have been commented out to move this non-secret
 # configuration into code (so it's easier to track/review changes). I left 
 # the definitions in for reference.

@@ -7,6 +7,7 @@ provider "sumologic" {
 
 provider "aws" {
   region = "us-west-2"
-  profile = "default" # local aws cli auth profile
   alias = "staging"
+  access_key = var.staging_aws_access_key
+  secret_key = var.staging_aws_secret_key
 }
