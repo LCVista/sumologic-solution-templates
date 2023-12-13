@@ -131,13 +131,13 @@ dmypy.json
 # Terraform
 terraform
 .terraform
-terraform.tfstate
+terraform.tfstate*
 aws-observability-terraform/test/*/test_output
 aws-observability-terraform/test/*/test_output.log
 aws-observability-terraform/**/.terraform
 aws-observability-terraform/**/crash.log
 pkg/
-
+*.tfvars
 
 # OS stuff
 .DS_Store

@@ -4,8 +4,8 @@ output "Apps" {
   sensitive = true
 }
 
-output "Collection" {
-  value       = module.collection-module
-  description = "All outputs related to collection and sources."
+output "StagingCollection" {
+  value       = module.staging-collection-module
+  description = "All outputs related to staging collection and sources."
   sensitive = true
 }
